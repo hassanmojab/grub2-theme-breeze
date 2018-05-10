@@ -5,33 +5,31 @@
 # Some rights reserved. This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License.
 #
 
-desktop-image: "background.png"
+desktop-image: "background.jpg"
 
-# colors are taken from the breeze default theme
 title-text: ""
-#title-font: "Terminus 18"
+#title-font: "DejaVu Regular 16"
 #title-color: "#fcfcfc"
-message-font: "Terminus 18"
+message-font: "DejaVu Regular 14"
 message-color: "#fcfcfc"
-terminal-font: "Terminus 18"
+terminal-font: "DejaVu Regular 16"
 terminal-box: "terminal_*.png"
 
 + boot_menu {
   left = 0%
   width = 100%
-  top = 33%
-  height = 33%
+  top = 25%
+  height = 50%	
 
   menu_pixmap_style = "boot_menu_*.png"
 
-  item_font = "Terminus 18"
-  # breeze inactive text color
-  item_color = "#7f8c8d"
+  item_font = "DejaVu Regular 14"
+  item_color = "#a7bcd1"
   item_height = 44
   item_icon_space = 8
   item_spacing = 2
 
-  selected_item_font = "Terminus 18"
+  selected_item_font = "DejaVu Bold 14"
   selected_item_color= "#fcfcfc"
   selected_item_pixmap_style = "select_*.png"
 
@@ -45,14 +43,13 @@ terminal-box: "terminal_*.png"
 
 + progress_bar {
   id = "__timeout__"
-  left = 33%
-  width = 33%
-  top = 70%
-  height = 8
+  left = 20%
+  width = 60%
+  top = 80%
+  height = 1%
   show_text = false
   text = ""
-  font = "Terminus 12"
   fg_color = #3daee9
   bg_color = #31363b
-  border_color = #4d4d4d
+  border_color = #31363b
 }
